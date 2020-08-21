@@ -5,7 +5,6 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'scrooloose/nerdtree'
-Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 call plug#end()
 " Theme
