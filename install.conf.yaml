@@ -8,6 +8,7 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - chsh -s $(which zsh)
+  - curl -L git.io/antigen > ~/antigen.zsh
