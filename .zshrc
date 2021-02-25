@@ -60,8 +60,10 @@ if [ -f '/Users/benjaminsanvoisin/Downloads/google-cloud-sdk/path.zsh.inc' ]; th
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/benjaminsanvoisin/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/benjaminsanvoisin/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
-export PATH="/Users/benjaminsanvoisin/Library/Python/3.9/bin:$PATH"
+#eval "$(pyenv virtualenv-init -)"
+#export PATH="/Users/benjaminsanvoisin/Library/Python/3.9/bin:$PATH"
 export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
