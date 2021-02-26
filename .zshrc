@@ -62,10 +62,10 @@ if [ -f '/Users/benjaminsanvoisin/Downloads/google-cloud-sdk/path.zsh.inc' ]; th
 if [ -f '/Users/benjaminsanvoisin/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/benjaminsanvoisin/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv virtualenv-init -)"
 #export PATH="/Users/benjaminsanvoisin/Library/Python/3.9/bin:$PATH"
 export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
