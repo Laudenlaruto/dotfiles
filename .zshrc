@@ -55,8 +55,6 @@ antigen apply
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/benjaminsanvoisin/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/benjaminsanvoisin/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
